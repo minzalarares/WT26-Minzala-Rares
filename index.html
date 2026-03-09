@@ -1,19 +1,53 @@
 <!DOCTYPE html>
-<html lang="ro">
+<html lang="en">
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
-    <title>Pagina mea</title>
+    <title>Document</title>
 </head>
 <body>
-
-    <h1>Salut, lume!</h1>
-    <p>Acesta este primul meu paragraf în HTML. Este o pagină foarte simplă.</p>
+    <table border="1" style="border-collapse: collapse" height="500px" width="600px">
+        <tr>
+            <th></th>
+            <th>1</th>
+            <th>2</th>
+            <th>3</th>
+            <th>4</th>
+            <th>5</th>
+        </tr>
+             <th>1</th>
+             <td colspan="3">1</td>
+             <td colspan="2" rowspan="4">2</td>
+        </tr>
+        <tr>
+            <th>2</th>
+            <td>3</td>
+            <td colspan="2" rowspan="3">4</td>
+        </tr>
+        <tr>
+            <th>3</th>
+            <td rowspan="3">3</td>
+        </tr>
+        <tr>
+            <th>4</th>
+        </tr>
+        <tr>
+            <th>5</th>
+            <td>6</td>
+            <td>7</td>
+            <td>8</td>
+            <td rowspan="3">9</td>
+        </tr>
+        <tr>
+            <th>6</th>
+            <td colspan="2">10</td>
+            <td rowspan="2" colspan="2">11</td>
+        </tr>
+        <tr>
+            <th>7</th>
+            <td colspan="2">12</td>
+        </tr>
+    </table>
     
-    <ul>
-        <li>Elementul 1</li>
-        <li>Elementul 2</li>
-    </ul>
-
 </body>
 </html>
