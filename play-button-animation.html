@@ -1,0 +1,61 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+    <style>
+        :root {
+            --dark-color: #0E3FBB;
+            --light-color: #A8F3FB;
+        }
+        #light1{
+            fill: var(--light-color);
+        }
+        #dark1{
+            fill: var(--dark-color);
+        }
+        #dark2{
+            fill: var(--dark-color);
+        }
+        #light1,
+        #dark1,
+        #dark2 {
+            transition: all 1s ease;
+        }
+        svg:hover #dark1 {
+            transform: translateX(20%);
+        }
+        svg:hover #dark2 {
+            transform: translateX(40%);
+            opacity: 0;
+        }
+        svg:hover #dark0{
+            transform: translateX(0);
+        }
+    </style>
+</head>
+
+<body>
+    <svg width="120" height="100" viewBox="0 0 120 100" fill="none" xmlns="http://www.w3.org/2000/svg">
+        <g id="polygons">
+            <g id="lightGroup">
+                <path id="light1"
+                    d="M56.5 48.6506C57.8333 49.4204 57.8333 51.3449 56.5 52.1147L22 72.0333C20.6667 72.8031 19 71.8409 19 70.3013L19 30.4641C19 28.9245 20.6667 27.9623 22 28.7321L56.5 48.6506Z"
+                    fill="#41D8E8" />
+            </g>
+            <g id="darkGroup">
+                <path id="dark1"
+                    d="M57 48.268C58.3333 49.0378 58.3333 50.9623 57 51.7321L22.5 71.6506C21.1667 72.4204 19.5 71.4582 19.5 69.9186L19.5 30.0814C19.5 28.5418 21.1667 27.5796 22.5 28.3494L57 48.268Z"
+                    fill="#0E3FBB" />
+                <path id="dark2"
+                    d="M70 48.268C71.3333 49.0378 71.3333 50.9623 70 51.7321L35.5 71.6506C34.1667 72.4204 32.5 71.4582 32.5 69.9186L32.5 30.0814C32.5 28.5418 34.1667 27.5796 35.5 28.3494L70 48.268Z"
+                    fill="#0E3FBB" />
+            </g>
+        </g>
+    </svg>
+
+</body>
+
+</html>
